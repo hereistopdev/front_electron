@@ -83,8 +83,8 @@ def visualize_in_3d(landmarks):
     plt.show()
 
 def send_data(client_sid):
-    video_source = "../../assets/2.mp4"  # For webcam input, use video source 0
-    # video_source = 0
+    # video_source = "../assets/2.mp4"  # For webcam input, use video source 0
+    video_source = 0
     cap = cv2.VideoCapture(video_source)
     if not cap.isOpened():
         print("Error: Unable to open video source.")
